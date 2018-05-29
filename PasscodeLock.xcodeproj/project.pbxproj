@@ -459,7 +459,7 @@
 					};
 					C9D3DF0F1B91AD11008561EB = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = X2MB65427X;
+						DevelopmentTeam = C826ALSJ6Q;
 						LastSwiftMigration = 0900;
 					};
 					C9D3DF221B91AD11008561EB = {
@@ -852,7 +852,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X2MB65427X;
+				DEVELOPMENT_TEAM = C826ALSJ6Q;
 				INFOPLIST_FILE = PasscodeLockDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -869,7 +869,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X2MB65427X;
+				DEVELOPMENT_TEAM = C826ALSJ6Q;
 				INFOPLIST_FILE = PasscodeLockDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

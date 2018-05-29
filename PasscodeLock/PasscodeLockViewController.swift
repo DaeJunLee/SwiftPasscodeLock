@@ -196,8 +196,27 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         
         animatePlaceholders(placeholders, toState: .error)
         
-        placeholdersX?.constant = -40
-        view.layoutIfNeeded()
+        /// Each of PlaceHodler's view sets X-coordinate
+        ///
+        /// - Parameters:
+        ///   - isFirstSetPosition: first X-coordinate true and false
+        ///   - xCoordinate: X-Coordinate
+        func viewSetX(_ isFirstSetPosition: Bool, _ xCoordinate: CGFloat) {
+            guard placeholders.count > 0 else { return }
+            
+            for view in self.placeholders {
+                if isFirstSetPosition {
+                    view.center.x = view.center.x + xCoordinate
+                } else {
+                    view.center.x = view.center.x - xCoordinate
+                }
+            }
+        }
+        
+        viewSetX(true, 20)
+        
+//        placeholdersX?.constant = -40
+//        view.layoutIfNeeded()
         
         UIView.animate(
             withDuration: 0.5,
@@ -206,9 +225,10 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
             initialSpringVelocity: 0,
             options: [],
             animations: {
+                viewSetX(false, 20)
                 
-                self.placeholdersX?.constant = 0
-                self.view.layoutIfNeeded()
+//                self.placeholdersX?.constant = 0
+//                self.view.layoutIfNeeded()
             },
             completion: { completed in
                 
